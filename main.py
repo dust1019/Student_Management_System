@@ -99,35 +99,6 @@ def update_data(data=[]):
         for item in data:
             file.write(str(item) + '\n')
 
-    # stu_info = check_stu(input('请输入学生ID: '))
-    # if stu_info:
-    #     for key, value in stu_info.items():
-    #         print(key, ':', value, end='\t')
-    #     while True:
-    #         print()
-    #         yuwen = input('请输入语文分数：')
-    #         math = input('请输入数学分数：')
-    #         english = input('请输入英语分数：')
-    #         if all(i.isdigit() and 0 < int(i) <= 100 for i in (yuwen, math, english)):
-    #             print('语文：', yuwen)
-    #             print('数学：', math)
-    #             print('英语：', english)
-    #             grade = {'语文': yuwen, '数学': math, '英语': english}
-    #             stu_info.update(grade)
-    #             with open('student_data.txt', 'w', encoding='UTF-8') as file:
-    #                 file.writelines(str(stu_info) + '\n')
-    #             print('录入完成，2秒后返回主菜单')
-    #             time.sleep(2)
-    #             sys_start()
-    #             break
-    #
-    #         else:
-    #             print('输入有误')
-    # else:
-    #     print('未查询到，或输入出错')
-    #     add_stu_info()
-
-
 # 根据ID查询学生是否存在，若存在返回该学生信息类型字典，否则返回false
 def check_stu(stu_id):
     pattern = rf"{{'id': '{stu_id}', [^}}]+}}"

@@ -4,6 +4,7 @@
 # IDE: PyCharm
 # Author: Dust
 # Date: 2023/8/6
+# ver: 1.0
 
 import os
 import sys

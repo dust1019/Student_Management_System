@@ -113,15 +113,15 @@ def check_stu(stu_id):
 
 
 # 根据姓名查找，如果没有返回false，如果存在重名返回一个对象
-def check_stu_name(stu_name):
-    pass
+def check_stu_name():
+    print('未实现')
 
 
 def find_stu_info():
     print('*****查找学生信息*****')
     print('--------------------')
     print('1.ID查找')
-    print('2.姓名查找')
+    print('2.姓名查找（未实现）')
     print('0.返回上一级')
     print('--------------------')
 
